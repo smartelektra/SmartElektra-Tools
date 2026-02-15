@@ -1,0 +1,12 @@
+{
+  "domain": "smartelektra_tools",
+  "name": "SmartElektra Tools",
+  "version": "1.0.0",
+  "documentation": "https://github.com/smartelektra/SmartElektra",
+  "requirements": [
+    "pymodbus>=3.0.0"
+  ],
+  "codeowners": [],
+  "config_flow": true,
+  "iot_class": "local_polling"
+}

@@ -1,0 +1,15 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "SmartElektra Tools",
+        "description": "Konfiguracja bramki Modbus TCP (RS485↔ETH) do operacji serwisowych.",
+        "data": {
+          "host": "Adres IP / host",
+          "port": "Port",
+          "timeout": "Timeout (s)"
+        }
+      }
+    }
+  }
+}

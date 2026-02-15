@@ -1,0 +1,76 @@
+set_slave_id:
+  name: Ustaw Slave ID (RTU)
+  description: Ustawia nowe Slave ID w urządzeniu Arduino (firmware musi wspierać holding register HR0). Dla target_slave=0 wysyła broadcast (bez odpowiedzi).
+  fields:
+    new_slave:
+      required: true
+      selector:
+        number:
+          min: 1
+          max: 247
+          mode: box
+    target_slave:
+      required: false
+      default: 0
+      selector:
+        number:
+          min: 0
+          max: 247
+          mode: box
+    hr_address:
+      required: false
+      default: 0
+      selector:
+        number:
+          min: 0
+          max: 65535
+          mode: box
+
+write_coil:
+  name: Zapis coil
+  description: Testowe ustawienie coila (ON/OFF) po Modbus TCP.
+  fields:
+    slave:
+      required: true
+      selector:
+        number:
+          min: 0
+          max: 247
+          mode: box
+    address:
+      required: true
+      selector:
+        number:
+          min: 0
+          max: 65535
+          mode: box
+    value:
+      required: true
+      selector:
+        boolean:
+
+write_register:
+  name: Zapis holding register
+  description: Testowy zapis pojedynczego holding register (16-bit).
+  fields:
+    slave:
+      required: true
+      selector:
+        number:
+          min: 0
+          max: 247
+          mode: box
+    address:
+      required: true
+      selector:
+        number:
+          min: 0
+          max: 65535
+          mode: box
+    value:
+      required: true
+      selector:
+        number:
+          min: 0
+          max: 65535
+          mode: box
