@@ -1,8 +1,8 @@
 {
   "domain": "smartelektra_tools",
   "name": "SmartElektra Tools",
-  "version": "1.0.0",
-  "documentation": "https://github.com/smartelektra/SmartElektra",
+  "version": "1.1.0",
+  "documentation": "https://github.com/smartelektra/SmartElektra-Tools",
   "requirements": [
     "pymodbus>=3.0.0"
   ],
